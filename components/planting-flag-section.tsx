@@ -110,7 +110,7 @@ export function PlantingFlagSection() {
                     <div className="text-lg font-semibold text-gray-900 group-hover:underline">
                       earthflag.store
                     </div>
-                    <p className="text-gray-600 mt-1">Official EarthFlag store</p>
+                    <p className="text-gray-600 mt-1">EarthFlag</p>
                   </div>
                 </a>
 
@@ -132,7 +132,7 @@ export function PlantingFlagSection() {
                     <div className="text-lg font-semibold text-gray-900 group-hover:underline">
                       hemptex.earth
                     </div>
-                    <p className="text-gray-600 mt-1">Hemptex Earth</p>
+                    <p className="text-gray-600 mt-1">Hemptex</p>
                   </div>
                 </a>
               </div>
@@ -146,7 +146,7 @@ export function PlantingFlagSection() {
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Share your story</h3>
                   <p className="text-gray-600 mt-1">
-                    Send a short note and a thumbnail image to Bart. We love to feature pioneer stories!
+                    Send a short note and a thumbnail images. We love to feature pioneer stories!
                   </p>
                 </div>
                 <Button size="icon" variant="ghost" onClick={() => setPanel("none")} aria-label="Close">
@@ -159,11 +159,10 @@ export function PlantingFlagSection() {
                   <a
                     href={`mailto:bart@earthflag.org?subject=Story%20submission%20for%20EarthFlag&body=Hi%20Bart%2C%0D%0A%0D%0AMy%20story%3A%20%5Badd%20a%20few%20lines%5D%0D%0A%0D%0AThumbnail%20details%3A%20%5Battach%20a%20photo%20to%20this%20email%5D%0D%0A%0D%0AThanks!`}
                   >
-                    Email bart@earthflag.org
+                    Email
                   </a>
                 </Button>
                 <p className="text-sm text-gray-600">
-                  Need to attach a <span className="font-medium">landscape 1200×675</span> image as thumbnail.
                 </p>
               </div>
             </div>
