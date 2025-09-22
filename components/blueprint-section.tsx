@@ -19,8 +19,8 @@ const TAB_CONTENT: Record<TabKey, {
     leftBody: "Mock: Seed of Life + sacred geometry. Replace with final copy.",
     rightTitle: "Seed of Life",
     rightBody: "Mock: Unity within change; pattern of creation. Replace later.",
-    imgSrc: "/Symbol.png",
-    imgAlt: "Seed of Life (mock)",
+    imgSrc: "/symbol.png",
+    imgAlt: "Symbol",
   },
   color: {
     leftTitle: "Color",
@@ -28,15 +28,15 @@ const TAB_CONTENT: Record<TabKey, {
     rightTitle: "Contrast & Accessibility",
     rightBody: "Mock: Keep at least AA contrast for text.",
     imgSrc: "/Color.png",
-    imgAlt: "Color swatches (mock)",
+    imgAlt: "Color swatches",
   },
   proportion: {
     leftTitle: "Proportion",
     leftBody: "Mock: Grid, margins, and safe area.",
     rightTitle: "Construction",
     rightBody: "Mock: Stripe ratios and emblem placement.",
-    imgSrc: "/Proportion.png",
-    imgAlt: "Proportion diagram (mock)",
+    imgSrc: "/proportion.png",
+    imgAlt: "Proportion",
   },
 }
 
