@@ -59,7 +59,7 @@ export function PlantingFlagSection() {
           <div className="relative">
             <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden relative">
               <img
-                src="/arctic-expedition-with-flag-planting-ceremony-on-i.jpg"
+                src="/water.jpg"
                 alt="Arctic expedition planting EarthFlag"
                 className="w-full h-full object-cover"
               />
