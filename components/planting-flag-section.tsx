@@ -103,7 +103,7 @@ export function PlantingFlagSection() {
                 >
                   <div className="aspect-[16/9] bg-gray-100">
                     <img
-                      src="/earthflag.png" 
+                      src="/Earthflag.png" 
                       alt="earthflag.store"
                       className="w-full h-full object-cover"
                     />
@@ -125,7 +125,7 @@ export function PlantingFlagSection() {
                 >
                   <div className="aspect-[16/9] bg-gray-100">
                     <img
-                      src="/hemptex.png"
+                      src="/Hemptex.png"
                       alt="hemptex.earth"
                       className="w-full h-full object-cover"
                     />
