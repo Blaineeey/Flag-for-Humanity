@@ -17,16 +17,14 @@ export function PlantingFlagSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Planting the flag
+              Stories
             </h2>
             <h3 className="text-2xl font-semibold text-gray-700 mb-6">
               Expedition to the Edge
             </h3>
             <div className="text-gray-600 leading-relaxed mb-8">
               <p>
-                In June 2018, the crew of infinity embarked on an incredible journey through the
-                Northwest Passage to help spread the message of global unity. These heroes raised
-                the EarthFlag on the Arctic ice on September 21st, the International Day of Peace.
+                Many pioneers have shown their commitment to bring the flag of Humanity to attention to help spread a message of unity.
               </p>
             </div>
 
