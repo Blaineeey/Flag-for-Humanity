@@ -5,6 +5,7 @@ import { OneTribeSection } from "@/components/one-tribe-section"
 import { PlantingFlagSection } from "@/components/planting-flag-section"
 import { OnePeaceSection } from "@/components/one-peace-section"
 import { Footer } from "@/components/footer"
+import { StoriesGallery } from "@/components/stories-gallery"
 
 export default function HomePage() {
   return (
@@ -24,6 +25,7 @@ export default function HomePage() {
         <OnePeaceSection />
       </section>
       <Footer />
+      <StoriesGallery />
     </main>
   )
 }

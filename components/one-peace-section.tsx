@@ -13,7 +13,7 @@ export function OnePeaceSection() {
 
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <h2 className="text-5xl md:text-6xl font-bold mb-6">One state of peace</h2>
-        <p className="text-xl md:text-2xl text-blue-100">Caring for each other and this beautiful planet</p>
+        <p className="text-xl md:text-2xl text-blue-100">Caring for each other and the life around us</p>
       </div>
     </section>
   )

@@ -12,12 +12,11 @@ export function OneTribeSection() {
       <div className="absolute inset-0 bg-blue-900/40" />
 
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
-        <h2 className="text-5xl md:text-6xl font-bold mb-6">One Tribe</h2>
-        <p className="text-xl md:text-2xl mb-8 text-blue-100">Uniting humanity through one symbol.</p>
+        <h2 className="text-5xl md:text-6xl font-bold mb-6">Uniting Humanity</h2>
+        <p className="text-xl md:text-2xl mb-8 text-blue-100">Through one symbol</p>
         <div className="max-w-3xl mx-auto text-lg text-blue-100 leading-relaxed">
           <p>
-            Our mission and vision embodying the potential and recognition of the EarthFlag by every body on the planet,
-            people and organizations.
+            The mission and ultimate objective is the adoption and recognition of the Flag of Humanity by every human being and human organization.
           </p>
         </div>
       </div>
