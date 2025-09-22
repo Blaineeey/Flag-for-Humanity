@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Play, X } from "lucide-react"
+import { Play, X, ExternalLink } from "lucide-react" // ⬅️ added ExternalLink
 import clsx from "clsx"
 
 type Panel = "none" | "resellers" | "share"
@@ -84,7 +84,6 @@ export function PlantingFlagSection() {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900">All resellers we know</h3>
-                  <p className="text-gray-600 mt-1">Click a box to visit the reseller.</p>
                 </div>
                 <Button size="icon" variant="ghost" onClick={() => setPanel("none")} aria-label="Close">
                   <X className="h-5 w-5" />
@@ -92,20 +91,30 @@ export function PlantingFlagSection() {
               </div>
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {/* Box 1 with photo */}
+                {/* Box 1 with photo — enhanced hover */}
                 <a
                   href="https://earthflag.store/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block rounded-xl border overflow-hidden hover:shadow-md transition-shadow"
+                  className="group relative block rounded-xl border bg-white/50 overflow-hidden transition-all motion-safe:duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/60"
                 >
-                  <div className="aspect-[16/9] bg-gray-100">
+                  {/* subtle gradient ring on hover */}
+                  <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-transparent group-hover:ring-blue-400/40 transition-[box-shadow,transform,ring] motion-safe:duration-300" />
+
+                  <div className="aspect-[16/9] overflow-hidden bg-gray-100">
                     <img
-                      src="/Earthflag.png" 
+                      src="/Earthflag.png"
                       alt="earthflag.store"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform motion-safe:duration-300 group-hover:scale-105"
                     />
+                    {/* gradient overlay */}
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity motion-safe:duration-300" />
+                    {/* corner badge */}
+                    <div className="pointer-events-none absolute right-3 top-3 flex items-center rounded-full bg-white/90 backdrop-blur px-2 py-1 text-xs font-medium text-gray-700 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all motion-safe:duration-300">
+                      Visit <ExternalLink className="ml-1 h-3 w-3" />
+                    </div>
                   </div>
+
                   <div className="p-5">
                     <div className="text-lg font-semibold text-gray-900 group-hover:underline">
                       earthflag.store
@@ -114,20 +123,27 @@ export function PlantingFlagSection() {
                   </div>
                 </a>
 
-                {/* Box 2 with photo */}
+                {/*hover effect */}
                 <a
                   href="https://www.hemptex.earth/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block rounded-xl border overflow-hidden hover:shadow-md transition-shadow"
+                  className="group relative block rounded-xl border bg-white/50 overflow-hidden transition-all motion-safe:duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/60"
                 >
-                  <div className="aspect-[16/9] bg-gray-100">
+                  <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-transparent group-hover:ring-blue-400/40 transition-[box-shadow,transform,ring] motion-safe:duration-300" />
+
+                  <div className="aspect-[16/9] overflow-hidden bg-gray-100">
                     <img
                       src="/Hemptex.png"
                       alt="hemptex.earth"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform motion-safe:duration-300 group-hover:scale-105"
                     />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity motion-safe:duration-300" />
+                    <div className="pointer-events-none absolute right-3 top-3 flex items-center rounded-full bg-white/90 backdrop-blur px-2 py-1 text-xs font-medium text-gray-700 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all motion-safe:duration-300">
+                      Visit <ExternalLink className="ml-1 h-3 w-3" />
+                    </div>
                   </div>
+
                   <div className="p-5">
                     <div className="text-lg font-semibold text-gray-900 group-hover:underline">
                       hemptex.earth
@@ -162,8 +178,7 @@ export function PlantingFlagSection() {
                     Email Us!
                   </a>
                 </Button>
-                <p className="text-sm text-gray-600">
-                </p>
+                <p className="text-sm text-gray-600"></p>
               </div>
             </div>
           )}
