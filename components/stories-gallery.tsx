@@ -1,16 +1,14 @@
-// components/stories-gallery.tsx
-const first_STORY_URL =
-  "https://uon.earth/earthflag/followflag/805524642021636097"
-const second_STORY_URL =
-  "https://uon.earth/earthflag/followflag/803868302379446273"
-const third_STORY_URL =
-  "https://uon.earth/earthflag/followflag/803866875166846977"
-const fourth_STORY_URL =
-  "https://uon.earth/earthflag/followflag/803864627909095425"
-const fifth_STORY_URL =
-  "https://uon.earth/earthflag/followflag/803863071520321537"
-const sixth_STORY_URL =
-  "https://uon.earth/earthflag/followflag/803858281893588993"
+"use client"
+
+import { AnimatedSection } from "@/components/animated-section"
+import { LazyImage } from "@/components/lazy-image"
+
+const first_STORY_URL = "https://uon.earth/earthflag/followflag/805524642021636097"
+const second_STORY_URL = "https://uon.earth/earthflag/followflag/803868302379446273"
+const third_STORY_URL = "https://uon.earth/earthflag/followflag/803866875166846977"
+const fourth_STORY_URL = "https://uon.earth/earthflag/followflag/803864627909095425"
+const fifth_STORY_URL = "https://uon.earth/earthflag/followflag/803863071520321537"
+const sixth_STORY_URL = "https://uon.earth/earthflag/followflag/803858281893588993"
 
 type StoryItem = {
   src: string
@@ -29,37 +27,33 @@ const STORIES: StoryItem[] = [
 
 export function StoriesGallery() {
   return (
-    <section
-      id="stories"
-      className="py-20"
-      style={{
-        backgroundImage: "url('/stories-desert.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="container mx-auto px-6">
+    <section id="stories" className="py-20 relative">
+      <div className="absolute inset-0">
+        <LazyImage src="/stories-desert.jpg" alt="Desert landscape background" className="w-full h-full" />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="mx-auto max-w-6xl">
-          {/* Gallery grid */}
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {STORIES.map((item, i) => (
-              <a
-                key={i}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block rounded-lg overflow-hidden shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/70"
-              >
-                <div className="relative aspect-[16/9]">
-                  <img
-                    src={item.src}
-                    alt={item.alt}
-                    className="absolute inset-0 h-full w-full object-cover transform transition duration-300 group-hover:scale-105 group-hover:brightness-110"
-                  />
-                  {/* Subtle overlay & lift on hover */}
-                  <div className="absolute inset-0 bg-black/0 transition duration-300 group-hover:bg-black/10" />
-                </div>
-              </a>
+              <AnimatedSection key={i} animation="fade-up" delay={i * 100} duration={500}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block rounded-lg overflow-hidden shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/70 transform transition-all duration-300 hover:scale-105 hover:-translate-y-2"
+                >
+                  <div className="relative aspect-[16/9]">
+                    <LazyImage
+                      src={item.src}
+                      alt={item.alt}
+                      className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:brightness-110"
+                    />
+                    <div className="absolute inset-0 bg-black/0 transition duration-300 group-hover:bg-black/10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition duration-300 group-hover:opacity-100" />
+                  </div>
+                </a>
+              </AnimatedSection>
             ))}
           </div>
         </div>

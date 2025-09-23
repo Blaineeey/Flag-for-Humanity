@@ -2,6 +2,10 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Menu } from "lucide-react"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -15,60 +19,72 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  const navItems = [
+    { href: "#blueprint", label: "Blueprint" },
+    { href: "#about", label: "About" },
+    { href: "#community", label: "Community" },
+    { href: "#get-involved", label: "Get Involved" },
+  ]
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-black/90 backdrop-blur-sm" : "bg-transparent"
+        isScrolled ? "bg-transparent/95 backdrop-blur-md border-b border-gray-200 shadow-sm" : "bg-transparent"
       }`}
     >
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
-            src="/flagforhuminity.png"
+            src="/flagforhumanity.png"
             alt="EarthFlag Foundation"
-            width={200}
-            height={40}
-            className="h-10 w-auto"
+            width={220}
+            height={44}
+            className="h-11 w-auto transition-opacity hover:opacity-90"
           />
+        </Link>
+
+        <div className="hidden lg:flex items-center space-x-8">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className={`transition-all duration-200 text-sm font-medium uppercase tracking-wider hover:scale-105 ${
+                isScrolled ? "text-gray-700 hover:text-gray-900" : "text-white/80 hover:text-white"
+              }`}
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
 
-        <div className="hidden md:flex items-center space-x-8">
-          <a
-            href="#blueprint"
-            className="text-white/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-          >
-            Blueprint
-          </a>
-          <a
-            href="#about"
-            className="text-white/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-          >
-            About
-          </a>
-          <a
-            href="#community"
-            className="text-white/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-          >
-            Community
-          </a>
-          <a
-            href="#get-involved"
-            className="text-white/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-          >
-            Get Involved
-          </a>
-          <a
-            href="#organization"
-            className="text-white/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-          >
-            Organization
-          </a>
-          <a
-            href="#contact"
-            className="text-white/80 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider"
-          >
-            Contact
-          </a>
+        <div className="lg:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className={`transition-colors ${
+                  isScrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
+                }`}
+              >
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="bg-white border-gray-200">
+              <div className="flex flex-col space-y-6 mt-8">
+                {navItems.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className="text-gray-700 hover:text-gray-900 transition-colors text-lg font-medium uppercase tracking-wider"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </header>
