@@ -7,11 +7,10 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "EarthFlag Foundation - One Earth. One Flag.",
+  title: "Flag of Humanity",
   description:
-    "A proposal for the flag of planet Earth. One symbol of belonging. When we belong, we protect what we love.",
+    "A proposal for the flag of Humanity",
   keywords: [
-    "Earth flag",
     "humanity flag",
     "global unity",
     "planet Earth",
@@ -20,9 +19,9 @@ export const metadata: Metadata = {
     "global community",
     "one earth",
   ],
-  authors: [{ name: "EarthFlag Foundation" }],
-  creator: "EarthFlag Foundation",
-  publisher: "EarthFlag Foundation",
+  authors: [{ name: "Flag of Humanity" }],
+  creator: "Flag of Humanity",
+  publisher: "Flag of Humanity",
   formatDetection: {
     email: false,
     address: false,
@@ -33,17 +32,17 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "EarthFlag Foundation - One Earth. One Flag.",
+    title: "Flag of Humanity",
     description:
-      "A proposal for the flag of planet Earth. One symbol of belonging. When we belong, we protect what we love.",
-    url: "https://earthflag.org",
-    siteName: "EarthFlag Foundation",
+      "A proposal for the flag of Humanity",
+    url: "https://flagofhumanity.org",
+    siteName: "Flag of Humanity",
     images: [
       {
         url: "/Globe.jpg",
         width: 1200,
         height: 630,
-        alt: "Earth from space - EarthFlag Foundation",
+        alt: "Flag of Humanity",
       },
     ],
     locale: "en_US",
@@ -51,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EarthFlag Foundation - One Earth. One Flag.",
+    title: "Flag of Humanity",
     description:
-      "A proposal for the flag of planet Earth. One symbol of belonging. When we belong, we protect what we love.",
+      " A proposal for the flag of Humanity",
     images: ["/Globe.jpg"],
     creator: "@earthflag",
   },

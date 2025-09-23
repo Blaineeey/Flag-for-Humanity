@@ -13,8 +13,8 @@ export function Footer() {
               </h3>
               <h4 className="text-2xl font-semibold text-gray-800 mb-4">Why</h4>
               <p className="text-gray-700 leading-relaxed">
-                In today’s world of growing chaos and separation, we aim to unite humanity 
-                in its responsibility to care for each other, and the life around us.
+                In today’s world of growing chaos and separation, we aim 
+                to unite humanity in its responsibility to care for each other, and the life around us.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ export function Footer() {
             {/* Col 3 */}
             <div className="px-6">
               <h3 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-                The EarthFlag
+                The Flag of Humanity
               </h3>
               <h4 className="text-2xl font-semibold text-gray-800 mb-4">What</h4>
               <p className="text-gray-700 leading-relaxed">
