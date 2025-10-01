@@ -1,4 +1,4 @@
-export function Footer() {
+export function UniteHumanity() {
   return (
     <footer className="bg-white pt-28 pb-28">
       <div className="container mx-auto px-6">

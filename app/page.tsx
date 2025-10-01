@@ -3,9 +3,10 @@ import { HeroSection } from "@/components/hero-section"
 import { BlueprintSection } from "@/components/blueprint-section"
 import { OneTribeSection } from "@/components/one-tribe-section"
 import { PlantingFlagSection } from "@/components/planting-flag-section"
-import { OnePeaceSection } from "@/components/one-peace-section"
-import { Footer } from "@/components/footer"
+import { StoriesSection } from "@/components/stories-section"
 import { StoriesGallery } from "@/components/stories-gallery"
+import { OnePeaceSection } from "@/components/one-peace-section"
+import { UniteHumanity } from "@/components/unite-humanity"
 
 export default function HomePage() {
   return (
@@ -21,10 +22,11 @@ export default function HomePage() {
       <section id="community">
         <PlantingFlagSection />
       </section>
+      <StoriesSection />
       <section id="get-involved">
         <OnePeaceSection />
       </section>
-      <Footer />
+      <UniteHumanity />
       <StoriesGallery />
     </main>
   )
