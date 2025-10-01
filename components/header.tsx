@@ -43,7 +43,7 @@ export function Header() {
           />
         </Link>
 
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -57,7 +57,7 @@ export function Header() {
           ))}
         </div>
 
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
               <Button

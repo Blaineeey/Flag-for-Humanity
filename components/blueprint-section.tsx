@@ -10,7 +10,7 @@ import { AnimatedSection } from "@/components/animated-section"
 import { LazyImage } from "@/components/lazy-image"
 import clsx from "clsx"
 
-const MEDIA_LIBRARY_URL = "https://uon.earth/earthflag/medialibrary/8439355465762758656"
+const MEDIA_LIBRARY_URL = "https://earthflag.store/product/earthflag-blueprint-pdf/"
 
 type TabKey = "symbol" | "color" | "proportion"
 
@@ -99,7 +99,7 @@ export function BlueprintSection() {
             >
               <a href={MEDIA_LIBRARY_URL} target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-4 w-4" />
-                Download PDF
+                Open PDF
               </a>
             </Button>
 

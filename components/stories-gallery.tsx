@@ -47,7 +47,7 @@ export function StoriesGallery() {
                     <LazyImage
                       src={item.src}
                       alt={item.alt}
-                      className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:brightness-110"
+                      className="absolute inset-0 h-full w-full object-contain transition duration-300 group-hover:brightness-110"
                     />
                     <div className="absolute inset-0 bg-black/0 transition duration-300 group-hover:bg-black/10" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition duration-300 group-hover:opacity-100" />
