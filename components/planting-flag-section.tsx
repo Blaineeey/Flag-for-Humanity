@@ -50,16 +50,16 @@ export function PlantingFlagSection() {
           <AnimatedSection animation="slide-left" delay={300}>
             <div className="relative">
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden relative">
-                <LazyImage
-                  src="/water.jpg"
-                  alt="Arctic expedition planting EarthFlag"
-                  className="w-full h-full object-cover"
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/ase8oB_vVmA?start=22"
+                  title="The Planting of the Flag"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center cursor-pointer hover:bg-white transition-colors">
-                    <Play className="w-6 h-6 text-gray-800 ml-1" />
-                  </div>
-                </div>
               </div>
             </div>
           </AnimatedSection>
