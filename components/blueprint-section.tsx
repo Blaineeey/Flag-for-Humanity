@@ -80,7 +80,7 @@ export function BlueprintSection() {
           <AnimatedSection animation="fade-up" delay={400}>
             <Card className="max-w-4xl mx-auto mb-12 border-0 shadow-lg transform transition-all duration-300 hover:shadow-xl">
               <CardContent className="p-8">
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   The Flag of Humanity was inspired by the cosmos and our home planet. The creators have dedicated the
                   design to the commons under the CC0 licence, meaning it is free for anyone to use without restriction
                   and cannot be claimed by any single individual or organisation.
@@ -142,7 +142,7 @@ export function BlueprintSection() {
                   <Card className="border-0 shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                     <CardContent className="p-8 h-full flex flex-col justify-center">
                       <h3 className="text-3xl font-bold text-gray-900 mb-4">{c.leftTitle}</h3>
-                      <p className="text-gray-700 leading-relaxed">{c.leftBody}</p>
+                      <p className="text-base md:text-lg text-gray-700 leading-relaxed">{c.leftBody}</p>
                     </CardContent>
                   </Card>
                 </AnimatedSection>
@@ -163,7 +163,7 @@ export function BlueprintSection() {
                   <Card className="border-0 shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                     <CardContent className="p-8 h-full flex flex-col justify-center">
                       <h3 className="text-3xl font-bold text-gray-900 mb-4">{c.rightTitle}</h3>
-                      <p className="text-gray-700 leading-relaxed">{c.rightBody}</p>
+                      <p className="text-base md:text-lg text-gray-700 leading-relaxed">{c.rightBody}</p>
                     </CardContent>
                   </Card>
                 </AnimatedSection>
@@ -174,7 +174,7 @@ export function BlueprintSection() {
                   <Card className="border-0 shadow-lg transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                     <CardContent className="p-8 h-full flex flex-col justify-center">
                       <h3 className="text-3xl font-bold text-gray-900 mb-4">Creative Commons</h3>
-                      <p className="text-gray-700 leading-relaxed">
+                      <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                         All rights to the EarthFlag design have been granted to the commons by its creators.
                       </p>
                     </CardContent>

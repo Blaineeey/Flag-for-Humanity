@@ -19,18 +19,17 @@ export function PlantingFlagSection() {
           <div>
             {/* Planting the flag */}
             <AnimatedSection animation="fade-up" delay={100}>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Stories</h2>
+              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Planting the flag</h2>
             </AnimatedSection>
 
             <AnimatedSection animation="fade-up" delay={200}>
-              <h3 className="text-2xl font-semibold text-gray-700 mb-6">Expedition to the Edge</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-gray-700 mb-6">Expedition to the Edge</h3>
             </AnimatedSection>
 
             <AnimatedSection animation="fade-up" delay={300}>
-              <div className="text-gray-600 leading-relaxed mb-8">
+              <div className="text-base md:text-lg text-gray-600 leading-relaxed mb-8">
                 <p>
-                  Many pioneers have shown their commitment to bring the flag of Humanity to attention to help spread a
-                  message of unity.
+                  In June 2018, the crew of Infinity embarked on an incredible journey through the Northwest Passage to help spread the message of global unity. These heroes have raised the EarthFlag on the Arctic ice on September 21st, known as the international Day of Peace.
                 </p>
               </div>
             </AnimatedSection>
@@ -43,11 +42,11 @@ export function PlantingFlagSection() {
                   asChild
                 >
                 <a
-                  href="https://uon.earth/earthflag/medialibrary"
+                  href="https://uon.earth/earthflag/followflag"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                      MORE JOURNALS
+                      More pioneer stories
                 </a>
                 </Button>
 

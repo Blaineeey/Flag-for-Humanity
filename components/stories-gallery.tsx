@@ -21,7 +21,7 @@ const STORIES: StoryItem[] = [
   { src: "/2nd.png", alt: "Flag in the wind", href: second_STORY_URL },
   { src: "/3rd.png", alt: "Flag in the sky", href: third_STORY_URL },
   { src: "/4th.png", alt: "Cyclist with flag", href: fourth_STORY_URL },
-  { src: "/5th.png", alt: "Athlete with flag", href: fifth_STORY_URL },
+  { src: "/5th.webp", alt: "Athlete with flag", href: fifth_STORY_URL },
   { src: "/6th.png", alt: "Mountain summit", href: sixth_STORY_URL },
 ]
 

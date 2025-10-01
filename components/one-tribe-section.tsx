@@ -28,19 +28,18 @@ export function OneTribeSection() {
           </AnimatedSection>
 
           <AnimatedSection animation="fade-up" delay={200}>
-            <h2 className="text-5xl md:text-7xl font-bold mb-8 text-white text-balance">Uniting Humanity</h2>
+            <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">Uniting Humanity</h2>
           </AnimatedSection>
 
           <AnimatedSection animation="fade-up" delay={300}>
-            <p className="text-2xl md:text-3xl mb-12 text-blue-100 font-medium">Through one symbol</p>
+            <p className="text-xl md:text-2xl mb-12 text-blue-100 font-medium whitespace-nowrap">Through one symbol</p>
           </AnimatedSection>
 
           <AnimatedSection animation="scale-up" delay={400}>
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm transform transition-all duration-300 hover:bg-white/15 hover:scale-105">
               <CardContent className="p-8 md:p-12">
-                <p className="text-xl md:text-2xl text-white leading-relaxed">
-                  The mission and ultimate objective is the adoption and recognition of the Flag of Humanity by every
-                  human being and human organization.
+                <p className="text-xl md:text-2xl text-white leading-relaxed max-w-3xl mx-auto">
+                  The mission and ultimate objective is the adoption and recognition of the Flag of Humanity by every human being and human organization.
                 </p>
               </CardContent>
             </Card>

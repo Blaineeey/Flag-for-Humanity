@@ -12,9 +12,9 @@ export function OnePeaceSection() {
       {/* Centered content */}
       <div className="relative z-10 container mx-auto px-6 h-full flex items-center justify-center">
         <div className="text-center text-white">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">One state of peace</h2>
-          <p className="text-xl md:text-2xl text-blue-100">
-            Caring for each other and the life around us
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 whitespace-nowrap">One state of peace</h2>
+          <p className="text-xl md:text-2xl text-blue-100 whitespace-nowrap">
+            Caring for each other and this beautiful planet
           </p>
         </div>
       </div>

@@ -29,10 +29,10 @@ export function HeroSection() {
 
         <AnimatedSection animation="fade-up" delay={600}>
           <div className="space-y-4 mb-12">
-            <p className="text-xl sm:text-2xl md:text-3xl font-medium text-white/95 text-balance leading-relaxed">
+            <p className="text-xl sm:text-2xl md:text-3xl font-medium text-white/95 text-balance leading-relaxed whitespace-nowrap">
               One symbol of belonging.
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto text-pretty leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto text-pretty leading-relaxed whitespace-nowrap">
               When we belong, we care for one another.
             </p>
           </div>
