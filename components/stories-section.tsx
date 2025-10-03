@@ -6,6 +6,7 @@ import { X, ExternalLink } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import { LazyImage } from "@/components/lazy-image"
 import clsx from "clsx"
+import Link from "next/link"
 
 type Panel = "none" | "resellers" | "share"
 
@@ -33,13 +34,9 @@ export function StoriesSection() {
                 variant="outline"
                 className="px-6 py-3 text-sm bg-transparent transform transition-all duration-200 hover:scale-105"
               >
-                <a
-                  href="https://uon.earth/earthflag/followflag"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link href="/blog">
                   More pioneer stories
-                </a>
+                </Link>
               </Button>
 
               <Button

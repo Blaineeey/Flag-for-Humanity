@@ -28,15 +28,15 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-transparent/95 backdrop-blur-md border-b border-gray-200 shadow-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-800/90 backdrop-blur-md ${
+        isScrolled ? "shadow-lg" : ""
       }`}
     >
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/flagforhumanity.png"
-            alt="EarthFlag Foundation"
+            alt="Flag of Humanity"
             width={220}
             height={44}
             className="h-11 w-auto transition-opacity hover:opacity-90"
@@ -48,9 +48,7 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className={`transition-all duration-200 text-sm font-medium uppercase tracking-wider hover:scale-105 ${
-                isScrolled ? "text-gray-700 hover:text-gray-900" : "text-white/80 hover:text-white"
-              }`}
+              className="transition-all duration-200 text-sm font-medium uppercase tracking-wider hover:scale-105 text-white hover:text-white/80"
             >
               {item.label}
             </a>
@@ -63,9 +61,7 @@ export function Header() {
               <Button
                 variant="ghost"
                 size="icon"
-                className={`transition-colors ${
-                  isScrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
-                }`}
+                className="transition-colors text-white hover:bg-white/10"
               >
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Open menu</span>
